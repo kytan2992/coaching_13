@@ -2,4 +2,4 @@ def greeting(name):
  print("Hello, " + name)
 
 def goodbye():
- print("Goodbye")
+ print("Goodbye everyone")
