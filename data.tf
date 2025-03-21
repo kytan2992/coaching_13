@@ -7,7 +7,7 @@ data "aws_security_group" "sg" {
 }
 
 data "aws_vpc" "vpc" {
-  id = module.vpc.default_vpc_id
+  id = module.vpc.vpc_id
 }
 
 data "aws_ami" "ami_linux" {
