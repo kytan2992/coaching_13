@@ -28,10 +28,10 @@ module "vpc" {
 module "vpc_security-group" {
   source = "terraform-aws-modules/security-group/aws"
 
-  name        = "${local.resource_prefix}-SG"
+  name            = "${local.resource_prefix}-SG"
   use_name_prefix = false
-  description = "Security Group with SSH "
-  vpc_id      = data.aws_vpc.vpc.id
+  description     = "Security Group with SSH "
+  vpc_id          = data.aws_vpc.vpc.id
 
   ingress_with_cidr_blocks = [
     {
